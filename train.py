@@ -442,7 +442,7 @@ def run_fusion(type='train', args=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Train with pytorch')
     parser.add_argument('--model_name', '-M', type=str, default='SD3Fuse')
-    parser.add_argument('--batch_size', '-B', type=int, default=10)
+    parser.add_argument('--batch_size', '-B', type=int, default=6)
     parser.add_argument('--gpu', '-G', type=int, default=0)
     parser.add_argument('--num_workers', '-j', type=int, default=8)
     args = parser.parse_args()
