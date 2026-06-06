@@ -94,15 +94,4 @@ python train.py --batch_size 5 --gpu 0 --num_workers 8
 - PIL / Pillow
 - Matplotlib
 
-## Citation
 
-If you find this work useful, please cite:
-
-```
-@article{sun2024c2lnet,
-  title={C2LNet: Cross-modality Complementarity Learning Network for Infrared and Visible Image Fusion},
-  author={Sun, Xingyu and Liu, Xiaobin and Yuan, Jing and Hu, Nan},
-  journal={Neural Networks},
-  year={2024}
-}
-```
