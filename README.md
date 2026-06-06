@@ -2,8 +2,8 @@
 
 ```
 C2LNet-main/
-├── FusionNet.py              # FusionNet, DRC, DenseBlock, SA1Attention, ScalarPredictor
-├── Dual_discriminator.py     # DisVIS_net and DisIR_net (7-layer conv discriminators)
+├── FusionNet.py              # FusionNet, RB, DenseBlock, SA1Attention, ScalarPredictor
+├── Dual_discriminator.py     # DisVIS_net and DisIR_net 
 ├── loss.py                   # GeneratorLoss, DiscriminatorLoss, InceptionEntropyHingeLoss, SSIM
 ├── TaskFusion_dataset.py     # MSRS dataset loader (train/val/test splits)
 └── train.py                  # Training script + inference (run_fusion)
@@ -17,7 +17,6 @@ Uses **MSRS** dataset. Expected directory structure:
 datasets/MSRS/
 ├── Visible/train/MSRS/       # Visible images (RGB)
 ├── Infrared/train/MSRS/      # Infrared images (grayscale)
-└── Label/train/MSRS/         # Ground truth labels
 ```
 
 ## Training
@@ -34,7 +33,6 @@ python train.py
 | Initial LR (Generator) | 1×10⁻³, decay 0.75 per epoch |
 | Initial LR (Discriminators) | 5×10⁻⁴, decay 0.75 per epoch |
 | Epochs | 20 |
-| Batch Size | 5 |
 | Color Space | YCrCb (fusion in Y channel, Cb/Cr from visible image) |
 | Image Resolution | Variable (no downsampling in fusion module, stride=1, padding=same) |
 
