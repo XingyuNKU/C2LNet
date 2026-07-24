@@ -1,3 +1,21 @@
+## Publication
+
+Our paper has been accepted by Neural Networks in July 2026.
+
+### BibTeX
+
+```bibtex
+@article{SUN2027109365,
+  title   = {C2LNet: Fusing infrared and visible image via a cross-modality complementarity learning network},
+  author  = {Xingyu Sun and Xiaobin Liu and Jing Yuan and Jianing Li and Nan Hu and Pingyu Wang},
+  journal = {Neural Networks},
+  volume  = {205},
+  pages   = {109365},
+  year    = {2027},
+  doi     = {https://doi.org/10.1016/j.neunet.2026.109365},
+}
+```
+
 ## Project Structure
 
 ```
